@@ -10,7 +10,7 @@ numpy== 1.20.1
 openpyxl==3.0.9
 pandas==1.2.3
 pydantic==1.8.1
-scikit-learn==0.22
+scikit-learn==0.22.0
 scipy==1.6.2
 six==1.15.0
 uvicorn==0.13.4
