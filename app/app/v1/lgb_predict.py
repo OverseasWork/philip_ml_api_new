@@ -26,7 +26,7 @@ from .tf_vec import TF2Vec
 class LgbModel(BaseInfoPre,AddPre,AppPre,SelfFeat,DFSFeat,TF2Vec):
     def __init__(self):
         super(LgbModel, self).__init__()
-        # self.path_data = 'app/app/v1/data/'
+        # self.path_data = 'app/app/ v1/data/'
         self.tf_w2vec_Model = load_data(f'{self.path_data }tf_w2vec_lgb.pkl')
         self.tf_w2vec_ml_feat = load_data(f'{self.path_data}tf_w2vec_lgb_feat.txt')
 

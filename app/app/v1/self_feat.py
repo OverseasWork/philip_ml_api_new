@@ -24,7 +24,7 @@ class SelfFeat:
     def __init__(self):
         super(SelfFeat, self).__init__()
         # 入模变量
-        self.path_data = 'app/app/V1/data/'
+        self.path_data = 'app/app/v1/data/'
         self.MlFeat = load_data(f'{self.path_data}feat.txt')
         # 通讯录
         self.seq_var_add = 'updateADD_tday'
