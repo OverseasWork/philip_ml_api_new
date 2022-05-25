@@ -59,8 +59,8 @@ class BaseInfo(BaseModel):
     brands: BrandsEnum = Field(title='手机品牌',
                                description="{'oppo':0,'samsung':1,'vivo':2,'realme':3,'huawei':4,'xiaomi':5,'redmi':6,'other':-999}")
     marry: MarryEnum = Field(title='婚姻', description="{'Married':0,'Unmarried':1,'Widowed':2,'Divorced':3}")
-    usable_ram: float = Field(title='剩余可用内存,/GB', description='剩余可用内存大小, 单位GB,若是 MB 请预先转化成 GB')
-    usable_memory: float = Field(title='剩余可用存储,/GB', description='剩余可用存储, 单位GB,若是 MB 请预先转化成 GB')
+    usable_ram: float = Field(title='剩余可用内存,/GB', description='剩余可用内存大小, 单位GB,若是 MB 请预先转化成 GB,精度保留2位')
+    usable_memory: float = Field(title='剩余可用存储,/GB', description='剩余可用存储, 单位GB,若是 MB 请预先转化成 GB,精度保留2位')
     resolution: str = Field(title='设备分辨率', description='设备分辨率,x_y_z')
 
 

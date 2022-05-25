@@ -92,8 +92,13 @@ class LgbModel(BaseInfoPre,AddPre,AppPre,SelfFeat,DFSFeat,TF2Vec):
 
         # 模型预测
         prob,score = self.new_model_predict(df=dt_df)
+        if score < 550:
+            decision = '拒绝'
+        else:
+            decision = '通过'
         # print(busi_id,score)
-        res = {'busi_id': busi_id,'prob':prob,'score':score, 'start': str(t0),'end':str(datetime.now())}
+        res = {'busi_id': busi_id,'prob':prob,'score':score,'decision':decision,
+               'start': str(t0),'end':str(datetime.now())}
         return res
 
 
